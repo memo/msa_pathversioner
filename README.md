@@ -1,6 +1,6 @@
 # msa_pathversioner
 
-A tiny OTL to manage versioning with cache.
+A tiny Houdini Digital Asset (HDA) to manage versioning with cache. It browses and lists as a dropdown, all subfolders of a specified cache root folder, and constructs a path to be used by other nodes (such as FileCache, Render etc).
 
 ![screenshot](screenshot.png)
 
@@ -10,7 +10,7 @@ A tiny OTL to manage versioning with cache.
 
 ## Details
 
-The OTL displays (as a dropdown menu) the available folders which contain a cache, allowing you to select which version of the cache to use.
+The HDA displays (as a dropdown menu) the available folders which contain a cache, allowing you to select which version of the cache to use.
 
 The default path for caches are constructed as:
 
@@ -25,7 +25,7 @@ E.g.
 - `<Name>`: user supplied descriptive name (e.g. `particles` or `fluid` etc.)
 - `<CacheHipName>`: user selected HIP filename to use (e.g. `Current HIP File`, `MyProject.001`, `MyProject.002` etc.)
 
-The OTL itself doesn't do any caching or anything else. It is just a UI for constructing a path. The `final path` parameter can be copy-pasted as a reference into the path field of any other node (e.g. FileCache, Render etc).
+The HDA itself doesn't do any caching or anything else. It is just a UI for constructing a path. The `final path` parameter can be copy-pasted as a reference into the path field of any other node (e.g. FileCache, Render etc).
 
 
 More info and motivation at https://www.sidefx.com/forum/topic/91845/
